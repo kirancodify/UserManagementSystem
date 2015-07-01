@@ -1,0 +1,6 @@
+service namespace "sap.cld_user_management.services" {
+	"CLD_USER_MANAGEMENT"."sap.cld_user_management.db::users" as "UsersEntity";
+	//create events (precommit "sap.cld_user_management.services:users.xsjslib::createUser")
+	//update events (precommit "sap.cld_user_management.services:users.xsjslib::updateUser")
+	//delete events (precommit "sap.cld_user_management.services:users.xsjslib::deleteUser");
+}

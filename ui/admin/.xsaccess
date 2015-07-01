@@ -1,0 +1,7 @@
+{
+	"exposed": true,
+	"authentication": { "method": "Basic" },
+	"authorization": [
+		"sap.cld_user_management::Admin"
+	]
+}

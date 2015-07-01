@@ -1,0 +1,6 @@
+role sap.cld_user_management.authorizations::admin 
+	extends role sap.cld_user_management.authorizations::viewer
+{
+	catalog schema "CLD_USER_MANAGEMENT" : DELETE, UPDATE, INSERT;
+	application privilege : sap.cld_user_management::Admin;
+}

@@ -1,0 +1,19 @@
+table.schemaName = "CLD_USER_MANAGEMENT";
+table.tableType = COLUMNSTORE;
+table.description = "CLD User Management Table";
+table.columns = [
+	{name = "firstName"; sqlType = NVARCHAR; nullable = false; length = 32; comment = "First Name";},
+	{name = "lastName"; sqlType = NVARCHAR; nullable = false; length = 32; comment = "last Name";},
+	{name = "gender"; sqlType = NVARCHAR; nullable = false; length = 7; comment = "Gender";},
+	{name = "email"; sqlType = NVARCHAR; nullable = false; length = 128; comment = "e-mail";},
+	{name = "accountNumber"; sqlType = NVARCHAR; nullable = true; length = 50; comment = "Account Number";},
+	{name = "company"; sqlType = NVARCHAR; nullable = false; length = 256; comment = "Company";},
+	{name = "role"; sqlType = NVARCHAR; nullable = true; length = 50; comment = "Role";},
+	{name = "relationship"; sqlType = NVARCHAR; nullable = false; length = 50; comment = "Relationship";},
+	{name = "userName"; sqlType = NVARCHAR; nullable = false; length = 50; comment = "User Name";},
+	{name = "password"; sqlType = NVARCHAR; nullable = false; length = 50; comment = "Password";},
+	{name = "invitationLanguage"; sqlType = NVARCHAR; nullable = false; length = 2; comment = "Invitation Language";},
+	{name = "isInvited"; sqlType = NVARCHAR; nullable = false; length = 3; comment = "Already Invited Flag";},
+	{name = "validTill"; sqlType = DATE; nullable = true;comment = "User account valid till";}
+];
+table.primaryKey.pkcolumns = ["userName"];

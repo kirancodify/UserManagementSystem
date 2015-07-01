@@ -1,0 +1,5 @@
+role sap.cld_user_management.authorizations::developer 
+	extends role sap.cld_user_management.authorizations::admin
+{
+	package sap.cld_user_management: REPO.READ, REPO.EDIT_NATIVE_OBJECTS, REPO.ACTIVATE_NATIVE_OBJECTS, REPO.MAINTAIN_NATIVE_PACKAGES, REPO.EDIT_IMPORTED_OBJECTS, REPO.ACTIVATE_IMPORTED_OBJECTS, REPO.MAINTAIN_IMPORTED_PACKAGES;
+}

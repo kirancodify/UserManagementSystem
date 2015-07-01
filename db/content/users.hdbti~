@@ -1,0 +1,9 @@
+import = [
+  {
+    table = "sap.cld_user_management.db::users";
+    schema = "CLD_USER_MANAGEMENT";
+    file = "sap.cld_user_management.db.content:users.csv";
+    header = false;
+    delimField = ",";
+  }
+];

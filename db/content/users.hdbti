@@ -1,0 +1,9 @@
+import = [
+  {
+    table = "schemaname::users";
+    schema = "SCHEMANAME";
+    file = "SCHEMANAME.db.content:users.csv";
+    header = false;
+    delimField = ",";
+  }
+];

@@ -1,0 +1,7 @@
+{
+	"exposed": true,
+	"authentication": { "method": "Form" },
+	"authorization": [
+		"sap.cld_user_management::Admin", "sap.cld_user_management::View"
+	]
+}

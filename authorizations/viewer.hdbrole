@@ -1,0 +1,5 @@
+role sap.cld_user_management.authorizations::viewer 
+{
+	catalog schema "CLD_USER_MANAGEMENT" : SELECT;
+	application privilege : sap.cld_user_management::View;
+}
